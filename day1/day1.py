@@ -1,13 +1,16 @@
 def main():
-    cur_max = 0
+    cur_best = list()
     input = open('input.txt','r')
     cur_elf = 0
     for line in input.readlines():
         if line in ['\n', '\r\n']:
-            cur_max= max(cur_max,cur_elf)
+            cur_best.append(cur_elf)
+            if len(cur_best) >= 4:
+                cur_best.sort(reverse=True)
+                cur_best.pop()
             cur_elf=0
         else:
             cur_elf+=int(line.strip())
-    print(cur_max)
+    print(sum(cur_best))
 
 main()
