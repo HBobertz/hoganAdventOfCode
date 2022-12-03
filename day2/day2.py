@@ -2,7 +2,6 @@ def part1():
     """_summary_    A, X = Rock
                     B, Y = Paper
                     C, Z = Scissors
-                    win = 8, tie = 6, loss = 1
     """
     key = {'A X': 4,
            'A Y': 8,
