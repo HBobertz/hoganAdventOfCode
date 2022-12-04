@@ -18,4 +18,27 @@ def part1():
                     sum += (ord(c)-96)
                 break
     print(sum)
+    
+def part2():
+    input = open('input.txt','r')
+    sum = 0
+    key = [set(),set(),set()]
+    counter = 0
+    for line in input.readlines():
+        for c in line.strip():
+            key[counter].add(c)
+        counter+=1
+        if counter >= 3:
+            key[0] = key[0] & key[1] & key[2]
+            print(key[0])
+            for c in key[0]:
+                if c.isupper():
+                    sum+= (ord(c)-38)
+                else:
+                    sum += (ord(c)-96)
+            key = [set(),set(),set()]
+            counter = 0
+    print(sum)
+   
+part2() 
 part1()
