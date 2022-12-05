@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+utils/__pycache__/utils.cpython-310.pyc
 *.py[cod]
 *$py.class
 
