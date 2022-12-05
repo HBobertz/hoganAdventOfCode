@@ -1,4 +1,3 @@
-import re
 from utils.utils import aoc_boiler
 
 @aoc_boiler(fname='input4.txt')
