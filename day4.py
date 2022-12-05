@@ -8,3 +8,7 @@ def part1(line):
         (ranges[2] >= ranges[0] and ranges[3] <= ranges[1]):
             return 1
     return 0
+
+@aoc_boiler(fname='input4.txt')
+def part2(line):
+    return 1 if sorted([[int(y) for y in x.split('-')] for x in line.split(',')])[0][1] >= sorted([[int(y) for y in x.split('-')] for x in line.split(',')])[1][0] else 0
