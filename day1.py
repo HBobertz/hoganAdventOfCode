@@ -1,6 +1,6 @@
 def main():
     cur_best = list()
-    input = open('input.txt','r')
+    input = open('inputs/input1.txt','r')
     cur_elf = 0
     for line in input.readlines():
         if line in ['\n', '\r\n']:

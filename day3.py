@@ -1,10 +1,11 @@
 import math
 
 def part1():
-    input = open('input.txt','r')
+    input = open('inputs/input3.txt','r')
     sum = 0
     for line in input.readlines():
         line = line.strip()
+        
         mid = math.floor(len(line)/2)
         rucksacks = [line[:mid], line[mid:]]
         set_key = set()
@@ -20,7 +21,7 @@ def part1():
     print(sum)
     
 def part2():
-    input = open('input.txt','r')
+    input = open('inputs/input3.txt','r')
     sum = 0
     key = [set(),set(),set()]
     counter = 0

@@ -13,7 +13,7 @@ def part1():
            'C Y': 2,
            'C Z': 6}
     sum = 0
-    input = open('input.txt','r')
+    input = open('inputs/input2.txt','r')
     for line in input.readlines():
         sum+= key[line.strip()]
     print(sum)
@@ -29,7 +29,7 @@ def part2():
            'C Y': 6,
            'C Z': 7}
     sum = 0
-    input = open('input.txt','r')
+    input = open('inputs/input2.txt','r')
     for line in input.readlines():
         sum+= key[line.strip()]
     print(sum)
