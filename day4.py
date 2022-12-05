@@ -11,4 +11,6 @@ def part1(line):
 
 @aoc_boiler(fname='input4.txt')
 def part2(line):
+    # if python was smart the 1 liner could have been:
+    # with sorted([[int(y) for y in x.split('-')] for x in line.split(',')]) as ranges: return 1 if ranges[0][1] >= ranges[1][0] else 0
     return 1 if sorted([[int(y) for y in x.split('-')] for x in line.split(',')])[0][1] >= sorted([[int(y) for y in x.split('-')] for x in line.split(',')])[1][0] else 0
